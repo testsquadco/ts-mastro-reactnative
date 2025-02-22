@@ -13,8 +13,8 @@ maestro-testing/
 │   └── parallel-runner.js
 ├── tests/
 │   ├── common/
-│   │   └── utils.yaml
-│   └── screenshots.yaml
+│   │   ├── utils.yaml
+│   │   └── screenshots.yaml
 │   ├── login/
 │   │   ├── login.yaml
 │   │   └── forgot-password.yaml
@@ -24,4 +24,4 @@ maestro-testing/
 │   └── failures/
 ├── .gitignore
 ├── maestro.config.yaml
-└── README.md 
+└── README.md
