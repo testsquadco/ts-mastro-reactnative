@@ -1,0 +1,23 @@
+appId: ${APP_ID}
+env:
+  EMAIL: ${TEST_EMAIL}
+  PASSWORD: ${TEST_PASSWORD}
+
+---
+- launchApp
+- assertVisible: "Welcome back!"
+
+- tapOn:
+    id: "email-input"
+- inputText: ${EMAIL}
+
+- tapOn:
+    id: "password-input"
+- inputText: ${PASSWORD}
+
+- tapOn:
+    id: "login-button"
+
+- assertVisible: "Dashboard"
+- assertVisible:
+    id: "user-profile" 

@@ -128,3 +128,29 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Build outputs
+apps/apk/*
+apps/ipa/*
+!apps/apk/.gitkeep
+!apps/ipa/.gitkeep
+
+# Test reports
+allure-results/
+allure-report/
+
+# Screenshots
+screenshots/failures/*
+!screenshots/failures/.gitkeep
+
+# Environment files
+config/*.env
+!config/*.env.example
+
+# OS files
+.DS_Store
+*.log
+
+# IDE files
+.idea/
+.vscode/

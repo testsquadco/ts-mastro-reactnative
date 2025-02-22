@@ -1,0 +1,22 @@
+appId: ${APP_ID}
+
+---
+- id: waitForElement
+  params:
+    elementId: string
+    timeout: 10000
+  commands:
+    - waitForVisible:
+        id: ${elementId}
+        timeout: ${timeout}
+
+- id: login
+  commands:
+    - tapOn:
+        id: "email-input"
+    - inputText: ${TEST_EMAIL}
+    - tapOn:
+        id: "password-input"
+    - inputText: ${TEST_PASSWORD}
+    - tapOn:
+        id: "login-button" 

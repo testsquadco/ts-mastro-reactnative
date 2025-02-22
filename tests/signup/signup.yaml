@@ -1,0 +1,32 @@
+appId: ${APP_ID}
+env:
+  EMAIL: "new.user@testsquad.com"
+  PASSWORD: "NewUser123!"
+
+---
+- launchApp
+- tapOn:
+    id: "signup-link"
+
+- assertVisible: "Create Account"
+
+- tapOn:
+    id: "name-input"
+- inputText: "Test User"
+
+- tapOn:
+    id: "email-input"
+- inputText: ${EMAIL}
+
+- tapOn:
+    id: "password-input"
+- inputText: ${PASSWORD}
+
+- tapOn:
+    id: "confirm-password-input"
+- inputText: ${PASSWORD}
+
+- tapOn:
+    id: "signup-button"
+
+- assertVisible: "Account created successfully" 

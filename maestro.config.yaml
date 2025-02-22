@@ -1,0 +1,21 @@
+appId:
+  android: "com.testsquad.myapp"
+  ios: "com.testsquad.myapp.ios"
+
+environmentConfig:
+  qa:
+    baseUrl: "https://api-qa.testsquad.com"
+  staging:
+    baseUrl: "https://api-staging.testsquad.com"
+  prod:
+    baseUrl: "https://api.testsquad.com"
+
+reporting:
+  allure:
+    enabled: true
+    outputDir: "allure-results"
+
+screenshots:
+  enabled: true
+  onFailure: true
+  outputDir: "screenshots/failures" 

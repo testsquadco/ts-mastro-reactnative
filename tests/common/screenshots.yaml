@@ -1,0 +1,8 @@
+appId: ${APP_ID}
+
+---
+- id: captureFailureScreenshot
+  script: |
+    const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+    const screenshotPath = `../screenshots/failures/${timestamp}_${TEST_NAME}_${STEP_NAME}.png`;
+    await device.takeScreenshot(screenshotPath); 

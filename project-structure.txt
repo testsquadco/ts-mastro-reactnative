@@ -1,0 +1,27 @@
+maestro-testing/
+├── apps/
+│   ├── apk/
+│   └── ipa/
+├── config/
+│   ├── qa.env
+│   ├── staging.env
+│   └── prod.env
+├── scripts/
+│   ├── build-apps.sh
+│   ├── run-tests.sh
+│   ├── setup-environment.sh
+│   └── parallel-runner.js
+├── tests/
+│   ├── common/
+│   │   └── utils.yaml
+│   └── screenshots.yaml
+│   ├── login/
+│   │   ├── login.yaml
+│   │   └── forgot-password.yaml
+│   └── signup/
+│       └── signup.yaml
+├── screenshots/
+│   └── failures/
+├── .gitignore
+├── maestro.config.yaml
+└── README.md 
